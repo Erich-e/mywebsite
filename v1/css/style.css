@@ -1,0 +1,51 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.header {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 3px double;
+    position: fixed;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    border-radius: 2px;
+    background-color: #f0f0f0;
+    padding: 3px 3px;
+    vertical-align: middle;
+}
+
+.header a.title {
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.header a:hover {
+    box-shadow: 2px 2px 1px;
+}
+
+.header-right {
+    font-size: 16pt;
+    float: right;
+}
+
+.content {
+    background-color: white;
+    margin: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 8px;
+}
+
+.portrait {
+    float: left;
+}
