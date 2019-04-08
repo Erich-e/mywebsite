@@ -1,0 +1,51 @@
+
+body{
+    display: grid;
+    height: 100%;
+    background-color: lightblue;
+}
+
+table {
+    width: 75%;
+}
+
+.chad {
+    margin: auto;
+    padding: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.chad a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.nametag {
+    text-align: center;
+    font-size: 100;
+    font-weight: bold;
+}
+
+.linkicon{
+    height: 80px;
+}
+
+.linkbox {
+    background-color: black;
+    border-radius: 8px;
+    font-size: 24pt;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.linkbox:hover {
+    border: 2px solid grey;
+    margin: 8px;
+}
+
+
