@@ -2,19 +2,15 @@
 
 body{
     font-family: Nunito, sans-serif;
-    display: grid;
     height: 100%;
     /* background-color: lightblue; */
     background-color: lightsalmon;
 }
 
-table {
-    width: 75%;
-}
-
 .chad {
     margin: auto;
     padding: 25px;
+    margin: 20px;
     border: 4px solid black;
     border-radius: 10px;
     background-color: white;
@@ -28,9 +24,14 @@ table {
 
 .nametag {
     text-align: center;
-    font-size: 100;
+    font-size: 100pt;
     font-weight: bold;
     /* font-style: italic; */
+}
+
+.linkcontainer {
+    display: flex;
+    justify-content: space-around;
 }
 
 .linkicon{
