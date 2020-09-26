@@ -1,12 +1,13 @@
 import React from "react";
-import "./css/style.css";
+import { NavLink } from "react-router-dom";
+
 import github_icon from "./static/github_icon.png";
 import linkedin_icon from "./static/linkedin_icon.png";
-
+import download_icon from "./static/download_icon.png";
 class Header extends React.Component {
     render() {
         return (
-            <div className="chad">
+            <div className="card header">
                 <div className="nametag">
                     ERICH ELENDT
                 </div>
@@ -14,22 +15,22 @@ class Header extends React.Component {
                     <a href="https://github.com/erich-e">
                         <img className="linkicon" src={github_icon} alt="github"/>
                     </a>
-                    <a href="/about">
+                    <NavLink to="/about">
                         <div className="linkbox">
                             About
                         </div>
-                    </a>
+                    </NavLink>
                     <a href="resume.pdf" download>
                         <div className="linkbox">
-                            Resume
-                            <img src="images/download-icon.png" alt=""/>
+                            Resume &nbsp;
+                            <img id="downloadicon" src={download_icon} alt=""/>
                         </div>
                     </a>
-                    <a href="/projects">
+                    <NavLink to="/projects">
                         <div className="linkbox">
                             Projects
                         </div>
-                    </a>
+                    </NavLink>
                     <a href="https://www.linkedin.com/in/erich-elendt">
                         <img className="linkicon" src={linkedin_icon} alt="linkedin"/>
                     </a>

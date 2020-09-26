@@ -3,30 +3,30 @@
 body{
     font-family: Nunito, sans-serif;
     height: 100%;
-    /* background-color: lightblue; */
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
+    background-color: #f0e0d0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
-.chad {
-    margin: auto;
+.card {
     padding: 25px;
     margin: 20px;
     border: 4px solid black;
     border-radius: 10px;
     background-color: white;
+    text-align: left;
 }
 
-.chad a {
-    color: white;
-    text-decoration: none;
+.card.header {
+    display: inline-block;
 }
-
 
 .nametag {
     text-align: center;
     font-size: 100pt;
     font-weight: bold;
-    /* font-style: italic; */
 }
 
 .linkcontainer {
@@ -36,6 +36,18 @@ body{
 
 .linkicon{
     height: 80px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.linkicon:hover {
+    border: 2px solid grey;
+    margin: 0px;
+    border-radius: 45px;
+}
+
+#downloadicon {
+    height: 27px;
 }
 
 .linkbox {
@@ -44,11 +56,25 @@ body{
     font-size: 24pt;
     padding: 13px;
     margin: 10px;
-    width: 160px;
     text-align: center;
+    width: 160px;
+    color: white;
 }
 
 .linkbox:hover {
-    border: 2px solid grey;
-    margin: 8px;
+    border: 3px solid grey;
+    margin: 7px;
+}
+
+.project {
+    display: flex;
+    border: 1px solid red;
+}
+
+.projectcontent {
+    border: 2px solid yellow;
+}
+
+.projecticon {
+    height: 20px;
 }
