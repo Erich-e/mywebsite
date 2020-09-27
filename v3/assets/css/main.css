@@ -213,33 +213,6 @@ body {
   background-position: top left, center center, bottom center;
   background-attachment: fixed, fixed, fixed;
 }
-body:after {
-  content: '';
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: inherit;
-  opacity: 0;
-  z-index: 1;
-  background-color: #ffffff;
-  background-image: url('images/overlay.png'),
-    -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-  background-image: url('images/overlay.png'),
-    -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-  background-image: url('images/overlay.png'),
-    -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-  background-image: url('images/overlay.png'),
-    linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-  background-repeat: repeat, no-repeat;
-  background-size: 100px 100px, cover;
-  background-position: top left, center center;
-  -moz-transition: opacity 1.75s ease-out;
-  -webkit-transition: opacity 1.75s ease-out;
-  -ms-transition: opacity 1.75s ease-out;
-  transition: opacity 1.75s ease-out;
-}
 body.is-preload:after {
   opacity: 1;
 }
@@ -911,18 +884,6 @@ button:disabled,
 
 /* Main */
 .main {
-  -moz-transform-origin: 50% 50%;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -moz-transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
-  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease;
   padding: 4.5em 3em 3em 3em;
   background: #ffffff;
   border-radius: 4px;
@@ -932,6 +893,7 @@ button:disabled,
   position: relative;
   text-align: center;
   width: 27em;
+  border: 1px solid red;
 }
 .main .avatar {
   position: relative;
@@ -955,22 +917,26 @@ button:disabled,
   z-index: -1;
   background: #c8cccf;
 }
-@media screen and (max-width: 480px) {
-  .main {
-    padding: 4em 2em 2.5em 2em;
-    width: 100%;
-  }
-  .main .avatar:before {
-    left: -2em;
-    width: calc(100% + 4em);
-  }
-}
 body.is-preload .main {
   -moz-transform: rotateX(15deg);
   -webkit-transform: rotateX(15deg);
   -ms-transform: rotateX(15deg);
   transform: rotateX(15deg);
   opacity: 0;
+}
+
+projects {
+  background: #ffffff;
+  border-radius: 4px;
+  max-width: 100%;
+  opacity: 0.95;
+  position: relative;
+  text-align: center;
+  width: 75em;
+  border: 1px solid red;
+  background: #ffffff;
+  margin-top: 20em;
+  padding: 2em;
 }
 
 /* Footer */
@@ -1012,19 +978,10 @@ body.is-preload .main {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
   -moz-flex-direction: column;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -moz-perspective: 1000px;
-  -webkit-perspective: 1000px;
-  -ms-perspective: 1000px;
-  perspective: 1000px;
-  position: relative;
   min-height: 100%;
   padding: 1.5em;
   z-index: 2;
