@@ -47,6 +47,10 @@ p {
 .personal {
   width: 400px;
   padding: 10vh 0px;
+  /* position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  align-self: flex-start; */
 }
 
 .personal .card {
