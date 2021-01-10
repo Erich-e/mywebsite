@@ -112,6 +112,8 @@ p {
 .project_content {
   float: left;
   margin-right: 10px;
+  height: 315px;
+  width: 560px;
 }
 
 .project_container footer {
